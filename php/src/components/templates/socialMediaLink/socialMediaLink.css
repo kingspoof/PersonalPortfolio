@@ -1,0 +1,17 @@
+.socialMediaLink{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 5px;
+    margin-bottom: 2px;
+}
+
+.socialMediaLink-image{
+    height: 30px;
+    width: 30px;
+}
+.socialMediaLink-name{
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0;
+}

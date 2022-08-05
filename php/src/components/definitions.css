@@ -1,0 +1,19 @@
+:root{
+    /* Define the colors for the website */
+    --foreground: white;
+    --background: rgb(236, 220, 176);
+    --background-secondary: rgb(255, 202, 177);
+
+    --color: rgb(0,0,0);
+    --color-secondary: rgb(0, 110, 144);
+
+
+    /* Define some components for the website */
+    --footer-height: 25vh;
+
+
+    /* Some values for fonts */
+    --font-weight-text: 300;
+    --font-weight-titles: 500;
+    --font-weight-big: 600;
+}

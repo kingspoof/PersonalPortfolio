@@ -1,0 +1,20 @@
+#Define the version of docker which is used
+version: '3.8'
+
+##Define the services which are used in the container
+#php-apache-environment:
+# container_name -> the name of the docker container
+# image -> the image which is used in the container
+#     In this example, the image is an apache webserver used to render the php pages
+# volumes -> the volume where the php files will be looked for: /var/www/html/ point to the php/src folder in the working directory
+# port -> the ports on which the server will listen for requests
+services:
+  php-apache-environment:
+    container_name: portfolio_php-apache
+    image: php:8.0-apache
+    volumes:
+      - ./php/src:/var/www/html/
+    ports:
+      - 8000:80
+    environment:
+        - ALLOW_OVERRIDE=true

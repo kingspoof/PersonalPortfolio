@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="<?= $css ?>">
+<div class="footer">
+    <div class="default-width footer-content">
+        <div class="footer-content-social-media">
+            <p class="footer-content-social-media-title">
+                Follow me on social media:
+            </p>
+            <?php 
+                $medien = ['github', 'instagram', 'linkedin'];
+                foreach($medien as $media){
+                    include('components/templates/socialMediaLink/socialMediaLink.php');
+                }
+            ?>
+        </div>
+    </div>
+</div>

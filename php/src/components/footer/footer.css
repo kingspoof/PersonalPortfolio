@@ -1,0 +1,23 @@
+@import url(../definitions.css);
+
+.footer{
+    background-image: linear-gradient(to right, var(--background), var(--background-secondary));
+    height: var(--footer-height); 
+    /* when chaning the height, it has to be changed in the default as well */
+}
+.footer-content{
+    /* Define the size and location of the footer content */
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: calc(var(--footer-height) - 2vh - 2vh);
+}
+
+.footer-content-social-media{
+
+}
+.footer-content-social-media-title{
+    font-weight: var(--font-weight-titles);
+}
+.footer-content-social-media-description{
+
+}
