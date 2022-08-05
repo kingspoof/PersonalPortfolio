@@ -13,6 +13,8 @@
     display: grid;
     place-content: center;
     transition: 1s;
+    font-size: var(--font-weight-big);
+    text-align: center;
 }
     .header:hover{
         transition: 1s ease-in-out;
@@ -23,12 +25,15 @@
         display:none;
     }
     .header:hover>.header-active{
-        display: block;
+        display: grid block;
+        row-gap: 3px;
+        color: var(--color-alternate);
     }
 
 
 .header-active{
     display: none;
+    color: var(--background-alternate);
 }
 
 

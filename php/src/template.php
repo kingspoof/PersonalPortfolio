@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +13,21 @@
     <?php
     include 'content/default_css_includes.php';
     $request = $_SERVER['REQUEST_URI'];
-    switch(strtoupper($request)){
+    switch(strtolower($request)){
+        case '/about':
+            $content = 'pages/about.phtml';
+            break;
+        
+        case '/experience':
+            $content = 'pages/experience.phtml';
+            break;
+        
+        case '/references':
+            $content = 'pages/references.phtml';
+            break;
+
         default:
-        $content = 'pages/home.phtml';
+            $content = 'pages/home.phtml';
         break;
     }
     include 'components/header/header.php';
