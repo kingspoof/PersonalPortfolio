@@ -3,13 +3,17 @@
     --foreground: white;
     --background: rgb(236, 220, 176);
     --background-secondary: rgb(255, 202, 177);
-
+    
     --color: rgb(0,0,0);
     --color-secondary: rgb(0, 110, 144);
-
+    
+    /* Alternate background settings to add some diferences */
+    --color-alternate: rgb(255, 255, 255);
+    --background-alternate: rgb(78, 89, 140);
 
     /* Define some components for the website */
     --footer-height: 25vh;
+    --header-height: 7vh;
 
 
     /* Some values for fonts */

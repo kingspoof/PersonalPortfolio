@@ -14,13 +14,13 @@
 <body>
     <?php
     include 'content/default_css_includes.php';
-    include 'components/header/header.php';
     $request = $_SERVER['REQUEST_URI'];
     switch(strtoupper($request)){
         default:
-            $content = 'pages/home.phtml';
-            break;
+        $content = 'pages/home.phtml';
+        break;
     }
+    include 'components/header/header.php';
     echo '<div class="container">';
     include ($content);
     echo '</div>';
