@@ -1,1 +1,23 @@
-<h1>home</h1>
+<div class="home">
+    
+
+
+    <div style="padding-top: 200px;"></div>
+    <!-- Here we only use components which display over the entire width, if it has to be updated to a component -->
+    <?php $name = 'Lucien Kaeser' ?>
+    <?php $name = '------ ------' ?>
+    <?php include('components/templates/nameDisplay/nameDisplay.php'); ?>
+
+
+    <?php $description = "A very motivated beeing with the focus and the dedication of a lion when hunting. If something can beat him, it probably will be a black hole or any type of snake or the sun, who knows." ?>
+    <?php $description = "_ ____ _________ ______ ____ ___ _____ ___ ___ ________ __ _ ___ ____ ______. __ _______ ___ ____ ___, __ ________ ____ __ _ _____ ____ __ ___ ____ __ _____ __ ___ ___, ___ _____" ?>
+    <?php include('components/templates/descriptionDisplay/descriptionDisplay.php') ?>
+
+
+    <div style="padding: 100px 0px 100px 0px; display: grid; grid-template-columns: 1fr 1fr" class="default-width">
+        <?php include('components/templates/experience/experience.php') ?>
+        <?php $type = 'prof'?>
+        <?php include('components/templates/experience/experience.php') ?>
+    </div>
+
+</div>

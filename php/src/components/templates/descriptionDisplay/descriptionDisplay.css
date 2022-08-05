@@ -1,0 +1,8 @@
+@import url(../definitions.css);
+
+
+.descriptionDisplayDescription{
+    font-weight: var(--font-weight-bigger);
+    font-size: 1.4em;
+    text-align: center;
+}

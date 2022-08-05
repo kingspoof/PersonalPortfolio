@@ -12,27 +12,28 @@
 <body>
     <?php
     include 'content/default_css_includes.php';
+    include 'content/helper_methods.php';
     $request = $_SERVER['REQUEST_URI'];
     switch(strtolower($request)){
         case '/about':
             $content = 'pages/about.phtml';
             break;
-        
+            
         case '/experience':
             $content = 'pages/experience.phtml';
             break;
-        
+                
         case '/references':
             $content = 'pages/references.phtml';
             break;
-
+                    
         default:
             $content = 'pages/home.phtml';
-        break;
+            break;
     }
     include 'components/header/header.php';
     echo '<div class="container">';
-    include ($content);
+    include $content;
     echo '</div>';
     include 'components/footer/footer.php';
     ?>

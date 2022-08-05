@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="<?= $css ?>">
+<section class="experience">
+    <div class="experience-wrapper default-width">
+        <?php 
+            $last = '';
+            foreach($experience as $e){
+
+                $name = (!empty($last['name']) and $last['name'] === $e['name']) ? '' : $e['name'];
+                $date = '';
+                if(!IsNullOrEmptyString($e['start'])) $date = $e['start'];
+                else if(!IsNullOrEmptyString($e['end'])) $date = $e['end'];
+                else $date = $e['year'];
+
+                print 
+                '<div class="experience-text experience-h' . $e['durration'] . '">
+                    <i> '. $name . '</i>
+                </div>
+                <div class="experience-timeline experience-h' . $e['durration'] . '">
+                    ' 
+                     . $date 
+                     . (IsNullOrEmptyString($e['start']) ? '' : '<div class="experience-timeline-start"></div>') 
+                     . (IsNullOrEmptyString($e['end']) ? '' : '<div class="experience-timeline-end"></div>')
+                     . '
+                    </div>
+                ';
+                $last = $e;
+            }
+        ?>
+    </div>
+</section> 
