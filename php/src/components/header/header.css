@@ -1,0 +1,42 @@
+@import url(../definitions.css);
+
+.header{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 20px;
+    background-color: var(--background-alternate);
+    border: var(--color) 2px solid;
+    color: var(--color-alternate);
+    display: grid;
+    place-content: center;
+    transition: 1s;
+}
+    .header:hover{
+        transition: 1s ease-in-out;
+        width: 33vw;
+        height: 33vh;
+    }
+    .header:hover>.header-inactive{
+        display:none;
+    }
+    .header:hover>.header-active{
+        display: block;
+    }
+
+
+.header-active{
+    display: none;
+}
+
+
+/* Header lines */
+.header-line{
+    position: relative;
+    background-color: var(--color-alternate);
+    width: 36px;
+    margin: 6px auto;
+    height: 3px;
+}
