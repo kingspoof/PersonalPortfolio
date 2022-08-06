@@ -58,7 +58,7 @@ switch($type){
                 'year' => ''
             ],
             [
-                'name' => 'Informatiker EFZ <br> Berufsmatura',
+                'name' => 'Informatiker EFZ <br> + Berufsmatura',
                 'start' => '',
                 'end' => '',
                 'durration' => 12,

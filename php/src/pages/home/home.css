@@ -1,0 +1,20 @@
+@import url(../definitions.css);
+
+.home-experience-display{
+    padding: 100px 0px 100px 0px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr
+}
+
+/* Make the grid displaying the experience responsive
+we support all devices with a min width of 500px */
+@media (max-width: 930px) {
+    .home-experience-display{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 930px){
+    .home-experience-display{
+        grid-template-columns: 1fr 1fr;
+    }
+}

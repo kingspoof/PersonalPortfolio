@@ -16,19 +16,19 @@
     $request = $_SERVER['REQUEST_URI'];
     switch(strtolower($request)){
         case '/about':
-            $content = 'pages/about.phtml';
+            $content = 'pages/about/about.phtml';
             break;
             
         case '/experience':
-            $content = 'pages/experience.phtml';
+            $content = 'pages/experience/experience.phtml';
             break;
                 
         case '/references':
-            $content = 'pages/references.phtml';
+            $content = 'pages/references/references.phtml';
             break;
                     
         default:
-            $content = 'pages/home.phtml';
+            $content = 'pages/home/home.phtml';
             break;
     }
     include 'components/header/header.php';

@@ -1,7 +1,5 @@
+<link rel="stylesheet" href="/pages/home/home.css">
 <div class="home">
-    
-
-
     <div style="padding-top: 200px;"></div>
     <!-- Here we only use components which display over the entire width, if it has to be updated to a component -->
     <?php $name = 'Lucien Kaeser' ?>
@@ -14,10 +12,9 @@
     <?php include('components/templates/descriptionDisplay/descriptionDisplay.php') ?>
 
 
-    <div style="padding: 100px 0px 100px 0px; display: grid; grid-template-columns: 1fr 1fr" class="default-width">
+    <div class="default-width home-experience-display">
         <?php include('components/templates/experience/experience.php') ?>
         <?php $type = 'prof'?>
         <?php include('components/templates/experience/experience.php') ?>
     </div>
-
 </div>

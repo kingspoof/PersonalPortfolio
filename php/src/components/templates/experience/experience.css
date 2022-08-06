@@ -2,6 +2,8 @@
 
 .experience{
     padding: 20px 0px 20px 0px;
+    z-index: 1;
+    min-width: 320px;
 }
 .experience-wrapper{
     display: grid;
@@ -9,7 +11,6 @@
     column-gap: 10px;
     row-gap: 5px;
 }
-
 
 .experience-text{
     text-align: right;
@@ -24,6 +25,7 @@
     height: 20px;
     width: 20px;
     content: "";
+    z-index: 1;
     background-color: transparent;
     border-top: 2px solid black;
     position: relative;
